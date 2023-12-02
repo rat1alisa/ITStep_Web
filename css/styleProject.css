@@ -2,6 +2,8 @@
 html, body{
     margin: 0;
     padding: 0;
+    background-image: url("https://cfmsystems.com/wp-content/uploads/2021/04/AdobeStock_233309267.jpeg");
+    background-size: cover; 
 }
 
 header{
@@ -178,3 +180,169 @@ header nav {
     width: 100%;
     max-width: 1000px;
   }
+
+
+/*-----------------------------*/
+
+
+
+
+.frame {   
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+  position: absolute;
+ background-color: rgb(32, 28, 41);
+ 
+ width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+ 
+  margin-top: -200px;
+  margin-left: -200px;
+ 
+  border-radius: 2px;
+ 
+ overflow: hidden;
+}
+
+.card {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+ width: 80%;
+ height: 40%;
+ padding: 15px;
+ 
+ background: linear-gradient(178deg, rgba(11,61,152,1) 0%, rgba(18,132,189,1) 14%, rgba(136,237,255,1) 100%);
+
+ animation: background 7s ease infinite;
+}
+
+.card .back {
+ position: absolute;
+ transform: rotateX(-180deg);
+}
+
+.flip {
+  transform-style: preserve-3d;
+ 
+  transition: all .7s ease-in-out;
+}
+
+.front h1{
+  display: block;
+  width: 290px;
+  height: 138px;
+  color: rgb(192,192,192);
+  font-size: 50px;
+  margin: 15px 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.outline {
+  position: relative;
+}
+
+.outline:before {
+  content: '';
+  position: absolute;
+ 
+ border: 1px solid #ad2fed;
+ 
+  top: -16px;
+  right: -16px;
+  bottom: -16px;
+  left: -16px;
+ 
+  opacity: 0;
+}
+
+.outline:hover:before, 
+.outline:focus:before, 
+.outline:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  opacity: 1;
+ 
+ transform: rotate(135deg) scale(3);
+ 
+ transition: 0.3s;
+}
+
+.card:hover .flip {
+ transform: rotateX(180deg)          translate3d(0, 0, 0);
+}
+
+.front, .back {
+ width: 100%;
+ height: 100%;
+ background: rgb(32, 28, 41);
+
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.back {
+ position: absolute;
+ top: 0;
+ left: 0;
+ font-size: 30px;
+ transform: rotate(135deg);
+ 
+ text-align: center;
+}
+.back h2 {
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  color: #f1eaea;
+ }
+ 
+.back h3 {
+  color: rgb(192,192,192);
+  font-weight: 300;
+  font-size: 30px;
+ }
+
+
+.front i{
+ position: absolute;
+ 
+ bottom: 0;
+ left: 0;
+ font-size: 30px;
+}
+
+.line {
+ position: absolute;
+ 
+ width: 30px;
+ height: 2px;
+ 
+ background: rgb(192,192,192);
+ 
+ top: 45%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.social {
+ font-size: 20px;
+ color: rgb(192,192,192);
+}
+.social i {
+  padding: 0px 7px;
+ }
+
+
+
