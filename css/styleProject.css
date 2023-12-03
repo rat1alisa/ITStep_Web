@@ -7,6 +7,10 @@ html, body{
 }
 
 header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
     background-color: black;
     font-family: 'Oswald', sans-serif;
 
@@ -280,8 +284,19 @@ header nav {
 }
 
 .card:hover .flip {
- transform: rotateX(180deg)          translate3d(0, 0, 0);
+ transform: rotateX(180deg)          
+ translate3d(0, 0, 0);
 }
+
+.ref{
+  color: rgb(192,192,192);
+}
+
+
+.ref:hover, .ref:focus{
+  color: rgb(136,237,255,1);
+}
+
 
 .front, .back {
  width: 100%;
