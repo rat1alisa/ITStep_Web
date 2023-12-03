@@ -1,22 +1,45 @@
 
-//создаем выдвигающийся блок меню
 
-let findButton = document.querySelector(".button"); //для начала найдем кнопку на странице нашего документа(дерево объектов на странице) по селектору(по классу)
-let menu = document.getElementById("main-menu");
+function addNewTask(event){
 
-if(findButton){ //проверка есть ли вообще это на странице
+    let list = document.querySelector(".tasks");
+    let tasks = document.getElementsByClassName("task");//чтобы посчитать их количество
+    let input = document.querySelector('input[name="todo-text"]');
 
-    findButton.addEventListener("click", () => {
-        if(findButton.classList.contains("pushed")) {
-            findButton.classList.remove("pushed");
-            menu.classList.remove("opened");
-        }//ClassList - список/коллекция классов объекта + contains проверка есть ли у объекта данный класс в атрибутах, и если есть - то удаляем()
-        else{//в противном случае - добавляем класс (со стилями)
-            findButton.classList.add("pushed");
-            menu.classList.add("opened");
-        }
-    }) //привязываем обработчик событий(в случае, если объект найден)
+    list.insertAdjacentHTML(
+        "beforeend",
+        `<div class="task">
+
+        <span>${tasks.length + 1}) ${input.value}</span>
+
+        <div class="elements">
+
+            <button class="yes"></button>
+
+            <button class="remove"><i class="fa fa-trash"></i></button>
+
+        </div>
+    </div>`
+
+    );
+
+    //OR
+    /*let l = list.innerHTML;
+    let newTaskCode = `<div class="task">
+
+        <span>${tasks.length + 1}. ${input.value}</span>
+
+        <div class="elements">
+
+            <button class="yes"></button>
+
+            <button class="remove"><i class="fa fa-trash"></i></button>
+
+        </div>
+    </div>`;
+
+    list.innerHTML = l + newTaskCode;*/
+
+
 }
-
-//меню
 
