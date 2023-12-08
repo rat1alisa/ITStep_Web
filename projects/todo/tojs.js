@@ -1,27 +1,59 @@
 
 
+function hasDone(event){
+
+    event.target.parentElement.previousElementSibling.style.textDecoration = "line-through";
+}
+
+
+function removeTask(event) {
+
+    let button = event.target.parentElement;
+  
+      if (event.target.localName == "i") {
+        button.parentElement.parentElement.remove();
+      } 
+      else {
+        button.parentElement.remove();
+      }
+    
+  }
+
+
 function addNewTask(event){
 
     let list = document.querySelector(".tasks");
     let tasks = document.getElementsByClassName("task");//чтобы посчитать их количество
     let input = document.querySelector('input[name="todo-text"]');
 
-    list.insertAdjacentHTML(
-        "beforeend",
-        `<div class="task">
+    if(input.value.trim() != ""){
 
-        <span>${tasks.length + 1}) ${input.value}</span>
+        list.insertAdjacentHTML(
 
-        <div class="elements">
+            "beforeend",
+            `<div class="task">
+    
+            <span>${tasks.length + 1}) ${input.value}</span>
+    
+            <div class="elements">
+    
+                <button class="yes" onclick="hasDone(event)"></button>
+    
+                <button class="remove" onclick="removeTask(event)"><i class="fa fa-trash"></i></button>
+    
+            </div>
+        </div>`
+    
+        );
 
-            <button class="yes"></button>
+    }
+    else{
+        alert("Sorry, I can't add this one, add some information");
+    }
 
-            <button class="remove"><i class="fa fa-trash"></i></button>
+    
 
-        </div>
-    </div>`
 
-    );
 
     //OR
     /*let l = list.innerHTML;
@@ -39,7 +71,6 @@ function addNewTask(event){
     </div>`;
 
     list.innerHTML = l + newTaskCode;*/
-
 
 }
 
