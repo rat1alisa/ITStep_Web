@@ -51,13 +51,23 @@ html, body, main{
     cursor: pointer;
     font-size: 20px;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background: none;
 
     margin: 0;
     padding: 0;
 
+    border: none;
+}
+
+.task .elements button:last-child{
+    color: red;
+}
+
+
+.task .elements button:first-child{
+    color: green;
 }
 
 .todo .interaction{
