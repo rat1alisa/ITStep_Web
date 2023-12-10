@@ -99,9 +99,9 @@ html, body, main{
 
 .interaction input{
     flex-grow: 1;
-    height: 40px;
+    height: 18px;
     padding: 10px 15px;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
     border-right: 0;
     border: 1px solid rgb(0, 0, 0);
 }
@@ -134,4 +134,5 @@ html, body, main{
    .gg-chevron-double-right::after {
     right: 11px
    }
+
    
