@@ -1,0 +1,144 @@
+html, body{
+    background: none;
+}
+
+
+
+main{
+    padding-top: 150px;
+    display: flex;
+}
+
+.registration-form{
+
+
+    padding-left: 20px;
+    padding-right: 40px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    width: 500px;
+
+    border: 1px solid black;
+    margin-left: 15px;
+
+
+
+}
+
+.registration-form h2{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group .form-control{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+
+    border: 1px solid rgb(32, 28, 41);
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-group .form-control:focus{
+    outline: none;
+}
+
+.form-group textarea.form-control{
+    height: 80px;
+}
+
+.form-group button{
+    background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.class-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.cardL{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid black;
+    padding: 15px 25px;
+    margin-left: 20px;
+}
+
+.card-list{
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.cardL img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.cardL .card-name{
+    font-weight: 700;
+}
+
+.cardL .card-age{
+    font-size: 16px;
+}
+
+.cardL button{
+    margin-top: 15px;
+
+    width: 50%;
+    height: 30px;
+    background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  outline: none;
+  padding: 5px ;
+
+  cursor: pointer;
+}
+
+
+
