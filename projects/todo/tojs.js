@@ -1,9 +1,19 @@
 
 
-function hasDone(event){
-
-    event.target.parentElement.previousElementSibling.style.textDecoration = "line-through";
-}
+function hasDone(event) {
+    let button = event.target.parentElement;
+  
+      if (event.target.localName == "i") {
+  
+        button.parentElement.previousElementSibling.style.textDecoration =
+          "line-through";
+        button.remove();
+      } 
+      else {
+        button.previousElementSibling.style.textDecoration = "line-through";
+      }
+  }
+  
 
 
 function removeTask(event) {
@@ -37,7 +47,7 @@ function addNewTask(event){
     
             <div class="elements">
     
-                <button class="yes" onclick="hasDone(event)"></button>
+                <button class="yes" onclick="hasDone(event)"><i class="gg-chevron-double-right"></i></button>
     
                 <button class="remove" onclick="removeTask(event)"><i class="fa fa-trash"></i></button>
     
