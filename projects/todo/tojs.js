@@ -3,8 +3,8 @@
 function hasDone(event) {
     let button = event.target.parentElement;
   
-      if (event.target.localName == "i") {
-  
+      if (event.target.localName == "i")
+      {
         button.parentElement.previousElementSibling.style.textDecoration =
           "line-through";
         button.remove();
