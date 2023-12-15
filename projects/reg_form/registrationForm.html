@@ -53,12 +53,13 @@
 
             <h2>Registration Form</h2>
 
-            <form action="" method="POST"> <!--эти 2 атрибута нужны тогда, когда планируем отправлять данные-->
+            <form action="" method="POST" onsubmit="return sendForm(event)"> <!--эти 2 атрибута нужны тогда, когда планируем отправлять данные-->
 
                 <div class="form-group">
                     <label>Full Name</label>
 
                     <input type="text" class="form-control" name="FN">
+                    <div class="error" id="name-error"></div>
                 </div>
 
 
@@ -85,7 +86,8 @@
                 <div class="form-group">
                     <label>Phone Number</label>
 
-                    <input type="text" class="form-control" name="number" required>
+                    <input type="text" class="form-control" name="number" required >
+                    <div class="error" id="phone-error"></div>
                 </div>
 
 
@@ -106,12 +108,13 @@
                 <div class="form-group">
                     <label>Something adout you</label>
 
-                    <textarea class="form-control" name="smth"></textarea>
+                    <textarea class="form-control error" name="smth" required></textarea>
+                    <div class="error" id="address-error"></div>
                 </div>
 
 
                 <div class="form-group">
-                    <button class="form-control" type="button">Submit</button>
+                    <button class="form-control" type="submit" onclick="addPerson()">Submit</button>
 
                 </div>
 
@@ -132,29 +135,13 @@
                 <button type="button">Information</button>
 
             </div>
-
-            <div class="cardL">
-                <image src="avatar.png" alt=""></image>
-                <div class="card-name">Name Surname</div>
-                <div class="card-age">Age: N years</div>
-                <button type="button">Information</button>
-
-            </div>
-
-            <div class="cardL">
-                <image src="avatar.png" alt=""></image>
-                <div class="card-name">Name Surname</div>
-                <div class="card-age">Age: N years</div>
-                <button type="button">Information</button>
-
-            </div>
             
         </div>
 
     </main>
 
 
-    <script src="tojs.js"></script>
+    <script src="registrationForm.js"></script>
     <script src="../../js/jsProject.js"></script>
 </body>
 
