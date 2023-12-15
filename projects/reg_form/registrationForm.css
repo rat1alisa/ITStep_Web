@@ -2,8 +2,6 @@ html, body{
     background: none;
 }
 
-
-
 main{
     padding-top: 150px;
     display: flex;
@@ -22,8 +20,6 @@ main{
 
     border: 1px solid black;
     margin-left: 15px;
-
-
 
 }
 
@@ -52,6 +48,7 @@ main{
     padding-left: 10px;
     padding-right: 10px;
 }
+
 
 .form-group .form-control:focus{
     outline: none;
@@ -88,6 +85,8 @@ main{
     gap: 15px;
 
     flex-wrap: wrap;
+
+    
 }
 
 .cardL{
@@ -140,5 +139,9 @@ main{
   cursor: pointer;
 }
 
+.error{
+    color: red;
+    font-size: 13px;
+}
 
 
