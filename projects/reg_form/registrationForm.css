@@ -1,10 +1,12 @@
 html, body{
-    background: none;
+    
 }
 
 main{
     padding-top: 150px;
     display: flex;
+
+    color:white;
 }
 
 .registration-form{
@@ -18,14 +20,21 @@ main{
 
     width: 500px;
 
-    border: 1px solid black;
     margin-left: 15px;
+
+    background: rgb(0, 0, 0);
+
+    -webkit-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
 
 }
 
 .registration-form h2{
     margin: 0;
     margin-bottom: 20px;
+    color: rgb(148 189 255);
+
 }
 
 .form-group{
@@ -79,14 +88,14 @@ main{
 
 
 .class-list{
+
+    width: 800px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 15px;
 
     flex-wrap: wrap;
-
-    
 }
 
 .cardL{
@@ -95,9 +104,16 @@ main{
     flex-direction: column;
     align-items: center;
 
-    border: 1px solid black;
     padding: 15px 25px;
     margin-left: 20px;
+
+    background: rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+
+border-radius: 20px;
+
 }
 
 .card-list{
@@ -142,6 +158,42 @@ main{
 .error{
     color: red;
     font-size: 13px;
+}
+
+.removeElement .removeCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 3px solid black;
+    background: white;
+
+    -webkit-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+}
+
+
+ .removeCard{
+    position: absolute;
+
+    color: black;
+
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    background: white;
+
+    margin-bottom: 20px;
+
+    margin: 30px;
+    bottom: 0;
+    right: 0;
+}
+
+.removeCard.active{
+    background: cyan;
 }
 
 
