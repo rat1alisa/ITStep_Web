@@ -1,4 +1,4 @@
-html, body{
+/*html, body{
     
 }
 
@@ -194,6 +194,239 @@ box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
 
 .removeCard.active{
     background: cyan;
+}*/
+
+
+
+
+
+
+
+
+
+
+html, body{
+    background: none;
+}
+
+main{
+    padding-top: 150px;
+    display: flex;
+
+    color:white;
+}
+
+.registration-form{
+
+    padding-left: 20px;
+    padding-right: 40px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    width: 500px;
+
+    margin-left: 15px;
+
+    background: rgb(0, 0, 0);
+
+    -webkit-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+
+}
+
+.registration-form h2{
+    margin: 0;
+    margin-bottom: 20px;
+    color: rgb(148 189 255);
+
+}
+
+.form-group{
+    margin-bottom: 15px;
 }
 
 
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group .form-control{
+    width: 100%;
+    height: 40px;
+
+
+    border: 1px solid rgb(32, 28, 41);
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.form-group .form-control:focus{
+    outline: none;
+}
+
+.form-group textarea.form-control{
+    height: 80px;
+}
+
+.form-group button{
+
+  border-radius: 8px;
+  box-sizing: border-box;
+  
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.class-list{
+
+    width: 800px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.cardL{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px 25px;
+    margin-left: 20px;
+
+    background: rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+
+border-radius: 20px;
+
+}
+
+.card-list{
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.cardL img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.cardL .card-name{
+    font-weight: 700;
+}
+
+.cardL .card-age{
+    font-size: 16px;
+}
+
+.cardL button{
+    margin-top: 15px;
+
+    width: 50%;
+    height: 30px;
+    background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  outline: none;
+  padding: 5px ;
+
+  cursor: pointer;
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+}
+
+.removeElement .removeCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 3px solid black;
+    background: white;
+
+    -webkit-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+box-shadow: 0px 0px 37px -3px rgba(0,0,0,1);
+}
+
+
+ .removeCard{
+    position: absolute;
+
+    color: black;
+
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    background: white;
+
+    margin-bottom: 20px;
+
+    margin: 30px;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.removeCard.active{
+    background: cyan;
+}
+
+
+.button-19 {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 30px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    
+    font-size: 15px;
+    font-weight: 700;
+    
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  .button-19:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
